@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",e=>{
         .then(resp=>{
             pets=''
             for(let i=0;i<resp.data?.length;i++){
-                pets+=`<div>{<p>Имя: ${resp.data[i].name}</p><p>Возраст: ${resp.data[i].age}</p><p>Владелец: ${resp.data[i].owner}</p>}</div>`
+                pets+=`<div><p>Имя: ${resp.data[i].name}</p><p>Фамилия: ${resp.data[i].age}</p></div>`
             }
             petsDOM.innerHTML=pets
         })
