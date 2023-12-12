@@ -15,12 +15,10 @@ document.addEventListener("DOMContentLoaded",e=>{
     let submittedPets=[]
     addPetButton.addEventListener("click",(e)=>{
         const name=document.querySelector('input[name="Name"]').value
-        const age=document.querySelector('input[name="Age"]').value
-        const owner=document.querySelector('input[name="Owner"]').value
+        const surname=document.querySelector('input[name="Age"]').value
         let data={
             "Name":name,
-            "Age":+age,
-            "Owner":owner,
+            "Surname":surname,
         }
         submittedPets.push(data)
         
